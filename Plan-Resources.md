@@ -21,6 +21,11 @@ Tools
 Data acquisition Components : 
 https://www.sciencedirect.com/science/article/pii/S0167404814000157
 
+Book References ::
+Practical Mobile Forensics Forensically investigate and analyze iOS, Android, and Windows 10 devices, 4th Edition
+
+Practical Forensic Analysis of Artifacts on iOS and Android Devices Investigating Complex Mobile Devices (Mohammed Moreb)
+
 Papers To Read ::
 
 https://ieeexplore.ieee.org/abstract/document/9486353
