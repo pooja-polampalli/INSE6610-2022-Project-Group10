@@ -4,11 +4,7 @@ Project 1, SRVEY1 Survey and compare the use of software and hardware tools in c
 
 Summary of Mobile Device Investigation
 
-Mobile forensic evidence can be call logs, contact lists, media (audio, picture, video, voicemail) files,  Calendar entries, geolocation data, Data from various installed apps.
-Mobile Device Investigation Tough - Different device, different architecture, different data structure
-NIST has catogorized mobile forensic techniques in five levels : Manual Extraction, Logical Extraction, Hex Dumping/JTAG, Chip-off, Micro Read
-Data can be collected from different components like sim card, SD card,  non-volatile memory chip, also can be specificed to one system/app
-In this project we are planning to analize tools like ADB(Android Debugging Bridge), SQLite DB browser, Autopsy, Oxygen Forensic for different stages of Mobile Device Investigation.
+Mobile forensic evidences can be call logs; contact lists; media which includes audio, picture, video, voicemail files; calendar entries; geolocation data and data from various installed apps. There are certain factors that make mobile device investigation robust and hard to scrutinize such as: different device, different architecture, different data structure. According to NIST mobile forensic techniques are categorized in five levels: Manual Extraction, Logical Extraction, Hex Dumping/JTAG, Chip-off and Micro Read Data. Evidence can be collected from different components like sim card, SD card and  non-volatile memory chip. It can also be sometimes collected from one specific system/app which might seem doubtful like Whatsapp, Facebook Messenger, etc. In this project we intend to analyze various cybercrime investigation tools like ADB(Android Debugging Bridge), SQLite DB browser, Autopsy and Oxygen Forensic.
 
 https://dfir.science/dfs101/dfs101-038/
 https://dfir.science/dfs101/dfs101-039/
