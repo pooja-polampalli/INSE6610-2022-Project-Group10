@@ -1,2 +1,3 @@
 Manual Extraction :
 ......
+Logical Extraction:
