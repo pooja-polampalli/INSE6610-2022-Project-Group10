@@ -1,0 +1,10 @@
+Nessus
+
+Nessus is one of the popular network vulnerability scanner in this world. It allows scans for misconfiguration for the software that installed in the machine. It is also include detecting open ports of the machine and version of the software installed in the machine. Other than that, it also scans vulnerabilities that allow a remote hacker to control or access sensitive data on a system, denials of service against TCP/IP stack and PCI DSS audits. This is also including web application scanning; for example to detect SQL injection and cross site scripting.
+
+Nessus has come out with two versions of the release; Home Feed release and Professional release. The difference between the Home Feed and Professional release is the update of plugins from the Nessus knowledge base. 
+
+Home Feed release only gets latest plugins as per installation date; Professional release, you will always get latest plugins as long as your renewal date is not expired. Home Feed release can also only scan a certain number of IP address at one time, where for Professional Feed, there is no limitation of address to be scanned. Nessus can be installed either in Windows or Linux operating system. Both 32 and 64 bit also supported by Nessus. For reporting purposes, the Nessus scanning result can be exported to several types of file for example HTML and CVS. The organization had used Nessus since the year 2010, when we started to execute vulnerability scanning process.
+
+Citations: Daud, N.I., Abu Bakar, K.A., & Md Hasan, M.S. (2014). A case study on web application vulnerability scanning tools. 2014 Science and Information Conference, 595-600.
+
