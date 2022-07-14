@@ -1,1 +1,2 @@
 -> Wireshark uses the Qt widget toolkit to implement its user interface and pcap to capture packets; it is cross-platform and may be used with Linux, macOS, BSD, Solaris, some other Unix-like operating systems, and Microsoft Windows.
+->TShark is a terminal-based (non-GUI) variation that is also available. Wireshark is free software that is offered under the conditions of the GNU General Public License version 2 or any subsequent version, together with any other accompanying programmes like TShark.
