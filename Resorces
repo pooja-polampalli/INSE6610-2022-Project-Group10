@@ -1,0 +1,6 @@
+Acunetix is an automated tool for assessing the security of web applications, auditing your web apps for exploitable flaws like SQL Injection and Cross-Site Scripting. It examines any HTTP/HTTPS-enabled website or online application that may be accessed through a web browser.
+
+Reference links:
+https://www.acunetix.com/support/docs/introduction/
+file:///C:/Users/Admin/Downloads/A_case_study_on_web_application_vulnerability_scanning_tools.pdf
+https://www.researchgate.net/publication/317930794_Web_Vulnerability_Scanners_A_Case_Study
