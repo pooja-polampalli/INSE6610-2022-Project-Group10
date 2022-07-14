@@ -1,0 +1,2 @@
+nmap is an open-source security auditing and network scanning software designed by Gordon Lyon. It is developed in such a way that it can quickly analyze massive networks as well as single hosts.
+For probing computer networks, Nmap offers a variety of functionalities, including as host discovery, service detection, and operating system detection. Scripts that offer more sophisticated service discovery, vulnerability detection, and other features can extend these features. During a scan, Nmap can adjust to changing network conditions, such as latency and congestion.
