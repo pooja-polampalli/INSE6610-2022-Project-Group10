@@ -1,0 +1,26 @@
+Tight security and integrated forensic investigation tools are provided by CAINE (Computer Aided Investigative Environment). In order to provide a user-friendly graphical user interface and connect current software tools as software modules, CAINE is created around a comprehensive investigative environment. Nanni Bassetti (Bari, Italy) is the project manager for CAINE Linux at the moment.
+
+All of the forensic instruments needed to carry out digital forensic investigative processes like preservation, collection, inspection, and analysis are made available by its operating environment.
+It offers an intuitive graphical user interface and intuitive forensic tools.
+It can be started from an optical disc or from external storage like flash drives and executed in memory.
+On a physical or virtual system, it is simply installed.
+Without launching the operating system, CAINE can access data storage objects in LIVE mode.
+
+CAINE is an open source ME platform  used in forensics. The application integrates  high-level scripts into the GUI
+
+CAINE Linux provides a variety of software tools that you can use for storage, databases, networks, and forensic analysis.  File image system analysis of file systems such as FAT / ExFAT, NTFS, Ext2, Ext3, HFS,  ISO 9660 is possible in both command line mode and graphical user interface mode. CAINE Linux also supports disk imaging in raw (dd) and Expert Witness / Advanced file formats. Disk images can be obtained using CAINE's built-in tools  or using third-party tools such as EnCase and the Forensic Toolkit.
+
+List of several tools  included in CAINE Linux
+
+Autopsy:Autopsy is simply SleuthKit's graphical user interface.
+
+The Sleuth Kit:This is an open source command line tool that supports  file system and disk forensic inspection.
+
+Wireshark: This is a digital forensic tool that supports non-real-time analysis of captured data packets (* .pcap) and interactive capture of network traffic. 
+PhotoRec: This tool supports recovery of lost files from hard drives, optical media and digital cameras.
+Fsstat: This tool displays statistical file system  information about images or storage objects.
+RegRipper: This is an open source tool  written in Perl that extracts / analyzes information such as keys, values, dates, etc. from the registry for data analysis.
+Tinfoleak: This is an open source tool for collecting detailed Twitter intelligence analysis
+
+
+
