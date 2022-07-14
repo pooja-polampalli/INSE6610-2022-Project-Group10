@@ -1,0 +1,1 @@
+-> Wireshark uses the Qt widget toolkit to implement its user interface and pcap to capture packets; it is cross-platform and may be used with Linux, macOS, BSD, Solaris, some other Unix-like operating systems, and Microsoft Windows.
