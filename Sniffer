@@ -36,4 +36,6 @@ Special investigatory and other considerations
 •	Ask for copies of the banners and user agreements (see Legal Considerations section below for more information).
 
 
-
+Scenario
+1.	An investigator is requested to visit a local business where multiple computer systems have been infiltrated by an outsider. One of the impacted systems has sniffer log files that the hacker has been maintaining and periodically accessing, according to analysis. The hacker has been compiling internal network traffic. The sniffer logs include the network names, user names, and passwords of other machines within the organisation. With the aid of this data, the investigator can locate further compromised user accounts and victim PCs at the business for additional investigation and proof.
+2.	An employee may have transferred private information from his work computer to his personal Internet account, according to a state agency. The investigators choose to place a sniffer at the organization's "firewall" because that specific person has access to numerous computer systems. Investigators are provided with the time, date, originating and destination IP addresses, as well as the substance of the employee's transfer, including the suspect data, by the network traffic sniffer. Investigators can identify the culprit as being at the keyboard of the computer that originated the illicit transfer by using witnesses and security cameras.
