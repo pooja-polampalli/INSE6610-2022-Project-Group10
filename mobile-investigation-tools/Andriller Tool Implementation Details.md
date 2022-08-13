@@ -4,7 +4,7 @@ Andriller is a software tool which contains a selection of forensic capabilities
 
 <h2> Andriller Features </h2>
 
-<img width="574" alt="Screenshot 2022-08-13 at 7 13 21 PM" src="https://user-images.githubusercontent.com/49758225/184516315-6a6d9bd6-ee07-4039-be10-487776536857.png">
+<img width="559" alt="Screenshot 2022-08-13 at 7 16 18 PM" src="https://user-images.githubusercontent.com/49758225/184516350-dc58d4b2-4e1b-4f91-aa26-c183c6c1bba1.png">
 
 
 <h2>Device Indetification and Social Media Account Detection Through Andriller </h2>
