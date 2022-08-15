@@ -1,0 +1,20 @@
+A lifetime can be used to explain how sophisticated cyberattacks are carried out. Mandiant Consulting (a FireEye Company), a supplier of incident response and information security consulting services, created the illustration and the text that follows.
+
+Initial Reconnaissance: The assailant investigates the objective. The attacker chooses his attack strategy and selects targets (both systems and individuals). The attacker can search for people or services with an online presence to take advantage of. The following actions may also be part of the attacker's research:
+• Locating websites at risk from web application vulnerabilities
+• Recognizing the target organization's internal structure and offerings • Examining the target organization's past, present, and future business operations
+• Investigating conferences that employees attended; • Perusing social media platforms to more precisely locate and socially engineer personnel
+
+Initial Compromise: On one or more systems, the attacker successfully runs malicious code. This most commonly happens by social engineering (most frequently spear phishing), by taking advantage of a flaw in a system that can be accessed via the Internet, or by any other means required.
+
+Establish Foothold: The attacker makes sure he keeps hold of a recently hacked system. This happens right after the initial compromise. Usually, the attacker gains access to the victim's PC via downloading extra software or malware, installing a permanent backdoor, or both.
+
+Escalate Privileges: Greater access to systems and data is gained by the attacker. Attackers frequently increase their rights using keystroke/credential logging, gaining PKI certificates, using the privileges that an application holds, exploiting a vulnerable piece of software, password hash dumping, password cracking, or pass-the-hash assaults.
+
+Internal Reconnaissance: The attacker looks about the victim's environment to learn more about it, the responsibilities of important people, and the locations of any organisations that may be storing valuable information.
+
+Move Laterally: In the compromised environment, the attacker moves from system to system using his access. Accessing network shares, running programmes through the Windows Task Scheduler, using remote access tools like PsExec, or interacting with target systems through a graphical user interface using remote desktop clients like Remote Desktop Protocol (RDP), DameWare, or Virtual Network Computing (VNC) are all examples of common lateral movement techniques.
+
+Maintain Presence: The attacker makes sure the environment is always accessible. Installing various malware backdoor versions or acquiring access to remote access services like the business Virtual Private Network are frequent techniques for keeping a presence (VPN).
+
+Complete Mission: The attacker succeeds in his mission. This frequently entails stealing intellectual property, financial information, merger and acquisition data, or Personally Identifiable Information (PII). Most targeted attackers remain in the environment after the mission is finished, keeping access in case a new mission is directed.
