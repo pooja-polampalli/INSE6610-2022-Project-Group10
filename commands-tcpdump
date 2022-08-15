@@ -1,0 +1,19 @@
+# INSE6610-2022-Project-Group10
+Project 1, SRVEY1 Survey and compare the use of software and hardware tools in cybercrime investigations.
+When troubleshooting you often simply want to get a result. 
+when capturing HTTP requests and responses you could filter out all packets except the data by removing SYN /ACK / FIN however if you are using grep the noise will be filtered anyway.
+1. Extract HTTP User Agents
+Extract HTTP User Agent from HTTP request header.
+:~$ sudo tcpdump -nn -A -s1500 -l | grep "User-Agent:"
+By using egrep and multiple matches we can get the User Agent and the Host (or any other header) from the request.
+
+:~$ sudo tcpdump -nn -A -s1500 -l | egrep -i 'User-Agent:|Host:'
+
+2. Capture only HTTP GET and POST packets
+Going deep on the filter we can specify only packets that match GET.
+
+:~$ sudo tcpdump -s 0 -A -vv 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x47455420'
+Alternatively we can select only on POST requests. Note that the POST data may not be included in the packet captured with this filter. It is likely that a POST request will be split across multiple TCP data packets.
+
+:~$ sudo tcpdump -s 0 -A -vv 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x504f5354'
+
