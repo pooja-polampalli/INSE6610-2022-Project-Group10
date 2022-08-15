@@ -1,0 +1,58 @@
+1. Introduction 
+When working on criminal cases, IoT devices and the possible evidence they contain become more and more crucial. For instance, information from a suspect's Fitbit 
+gadget
+was recently used in a criminal investigation and helped solve a murder. The heart rate information that indicated a spike during the claimed crime time was useful to 
+the
+police (Buhecker, 2018). On the other hand, a recent survey by Wu et al. (2019) discovered that there is a lack of tools for IoT forensics and that more than 50% of 
+practitioners do not feel equipped to handle IoT devices.
+Making a choice about how to gather evidence from IoT devices during a forensic investigation is crucial. This work focuses on the network layer method rather than 
+memory
+or internal storage. This typically entails checking for unencrypted data in the network traffic between the devices and systems it interfaces with (such as the cloud 
+and
+mobile apps) (Servida and Casey, 2019; Kayode and Tosun, 2019). The "metadata" from the network traffic, such as the nation in which the data resides, can also be 
+useful
+if the data is encrypted. When different regulations are involved, it is common for data to be housed in many nations, which presents difficulties for investigators.
+
+2. Related Work
+
+Port Scanning - On an IoT device, a researcher can search for open ports to exploit and obtain access to the device. Avast, a maker of consumer security software, 
+collected a dataset from an internet-wide scan that was used by Kumar et al. (2019). They searched the dataset for the most frequently used ports that were open on IoT 
+devices and discovered that the most popular ones were for device discovery (UPnP and mDNS) and device administration (HTTP and HTTPS). Nearly half of the devices were 
+discovered to use UPnP as a common port. Alrawi et al. (2019) observed 84 open ports running a variety of customised services, including SSH, UPnP, HTTP, DNS, Telnet, 
+and
+RTSO when they manually examined devices on their network.
+
+Utilising encryption - Determining whether a transmission is encrypted or not is a crucial step in network traffic analysis. A simple strategy is to take the 
+communication port into account, although ports are frequently exploited or picked at random. This is therefore merely a signal. As a result, researchers also examine 
+the payload in an effort to find less random patterns. For instance, the chi-square test and Shannon (1949) entropy became widely used.
+
+Network traffic metadata - The primary concern of Ren et al(2019) .'s research is the privacy implications; specifically, they investigate whether the location of the 
+device affects the kind of Personal Identifiable Information (PII) that is disclosed. They also looked into the various kinds of third parties that the devices 
+interacted with, like tracking and advertising services.
+
+HTTP Proxy - While a lot of research has been done on unencrypted data, there hasn't been much done to look at the content of encrypted communication. In a 2019 study,
+Kayode and Tosun intercepted the cloud communication of 6 mobile apps for smart homes. Many of these devices allowed them to retrieve the user ID, MAC address, home 
+address, username, and password. In a different investigation by Chung et al. (2017), the authors extracted forensic artefacts from the cloud by using a proxy server 
+to intercept encrypted data and acquire a list of unauthorised API calls from Amazon Alexa. The availability of user credentials was a need, though.
+
+3. Methodology
+
+IoT device selection - 17 IoT gadgets representing a variety of various categories were chosen.
+Port Scanning - A port scan was finished to find out which ports are open on the IoT devices after all the devices had been configured. The command we used to quickly 
+check for open TCP and UDP ports was nmap -sS -sU -p 0-65535 [deviceIP] (all ports). This action functioned as a proactive method of device analysis. Following the 
+completion of the port scan, we attempted to establish connections to open ports using the necessary software, such as a browser for port 80/443, an SSH-client for 
+port 22, and so on.
+Tool Creation - A tool that assisted us in handling the data more skillfully was developed in tandem with the data analysis. Examiners will be able to automatically 
+extract cleartext data and determine where the data ended using the shared tool.
+Popularity - We searched well-known retail sites, such as Amazon, for each gadget category based on price, popularity, average customer rating, and reviews.
+Compatibility with virtual assistants- When examining the popularity of products, we discovered that people preferred gadgets that worked with Google Home Mini or 
+Amazon Alexa. So, if we had to choose between two specific gadgets, we went with the compatible option.
+The manufacturers' smartphone apps were used to configure the devices. In addition, it set up if the IoT gadget supported Alexa or Google Home Mini. We contend that 
+most homes have this configuration (with the possible exception of those who have backgrounds in computer science or cybersecurity).
+
+Network Traffic Analysis - Using Network Miner6 and Wire Shark, we carefully examined all of the network traffic that was recorded. We customised the search in Network
+Miner using the cleartext dictionary file, then we utilised Wire shark to run a string search (in various encoding) on the network traffic of each device. We searched 
+for personal data created during setup as well as device identifiers (such MAC addresses and serial numbers) (e.g. names, email address, passwords, usernames). In 
+order
+to increase the likelihood of finding information, the payload was first analysed using the Ent7 tool to hunt for traffic that was most likely to be unencrypted. To 
+ensure that unencrypted traffic is not missed, we set the entropy test threshold to 7 (the test's result ranges from 0 to 8).
