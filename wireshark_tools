@@ -1,0 +1,32 @@
+
+
+S.NO	
+                     WIRESHARK	
+               
+      TCPDUMP
+
+1.	
+Free and open source tool	
+Free and open source tool
+
+2.	
+It can perform online and offline analysis. 	
+It captures the packet and performs the analysis online
+
+3.	
+Multiplatform: Runs on Windows, Linux, OS X and so on 	
+It supports OS like Linux, Mac OS, Solaris etc
+4.	
+It displays most powerful filters	
+Applying filters is difficult
+5.	 
+GUI based sniffer tool	
+Command line tool
+
+6.	
+Virtual size is 620-640 Mb	
+Virtual size of Tcpdump is 27-29 Mb
+
+7.	
+Resident size of Wireshark is 87-91 Mb	
+RES of tcpdump is 5.8-6.3 Mb
